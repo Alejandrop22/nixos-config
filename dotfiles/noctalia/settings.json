@@ -367,7 +367,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/cedric/nixos-config/dotfiles/profile/pluvium.jpg",
+        "avatarImage": "/home/alejandro/nixos-config/dotfiles/profile/pluvium.jpg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -665,7 +665,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/cedric/nixos-config/dotfiles/wallpapers",
+        "directory": "/home/alejandro/nixos-config/dotfiles/wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [

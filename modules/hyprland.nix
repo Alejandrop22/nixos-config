@@ -20,7 +20,7 @@
       exec-once = [
         "waybar"
         "dunst"
-        "bash -c 'awww-daemon && awww img /home/cedric/nixos-config/dotfiles/wallpapers/little_girl.png --transition-type fade'"
+        "bash -c 'awww-daemon && awww img /home/alejandro/nixos-config/dotfiles/wallpapers/little_girl.png --transition-type fade'"
       ];
       general = {
         gaps_in = 5;

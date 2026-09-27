@@ -32,7 +32,7 @@
 };
   outputs = { self, nixpkgs, home-manager, zen-browser, noctalia, quickshell, ... }@inputs:
   let
-    mkSystem = host: system: nixpkgs.lib.nixosSystem {
+    mkSystem = host: system: homeUser: nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs system; };
       modules = [
         ./hosts/${host}/configuration.nix
@@ -41,14 +41,15 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs system; };
-          home-manager.users.cedric = import ./home/cedric/home.nix;
+          home-manager.users.${homeUser} = import ./home/${homeUser}/home.nix;
         }
       ];
     };
   in {
     nixosConfigurations = {
-      desktop = mkSystem "desktop" "x86_64-linux";
-      laptop  = mkSystem "laptop"  "x86_64-linux";
+      desktop = mkSystem "desktop" "x86_64-linux" "cedric";
+      laptop  = mkSystem "laptop"  "x86_64-linux" "cedric";
+      victus  = mkSystem "victus"  "x86_64-linux" "alejandro";
     };
   };
 }

@@ -23,11 +23,6 @@ input {
 // ── Output ─────────────────────────────────────────────────────────────────
 // Remove or adjust this block to match your monitor.
 // Run `niri msg outputs` to see what niri detects.
-output "HKC OVERSEAS LIMITED 34E6UC 0000000000001" {
-    mode "3440x1440@144.000"
-    scale 1.0
-    position x=0 y=0
-}
 
 // ── Gestures ─────────────────────────────────────────────────────────────────
 gestures {
