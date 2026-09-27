@@ -1,0 +1,25 @@
+# ── Tema Tokyo Night ──────────────────────────
+theme = TokyoNight Moon
+
+# ── Fuente ────────────────────────────────────
+font-family = JetBrainsMono Nerd Font
+font-size = 13
+
+# ── Transparencia ─────────────────────────────
+background-opacity = 0.85
+background-blur-radius = 20
+
+# ── Sin decoraciones de ventana ───────────────
+window-decoration = false
+
+# ── Padding interno ───────────────────────────
+window-padding-x = 12
+window-padding-y = 10
+
+# ── Cursor ────────────────────────────────────
+cursor-style = bar
+cursor-style-blink = true
+
+# ── Shell ─────────────────────────────────────
+shell-integration-features = cursor,sudo,title
+shell-integration = zsh
